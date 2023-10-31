@@ -1,5 +1,29 @@
-/* header */
+header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+  padding: 16px 0;
+  font-size: 24px;
+}
+header .container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 
-
-
-/* header end*/
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  max-width: 292px;
+  width: 100%;
+}

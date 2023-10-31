@@ -44,7 +44,7 @@ body
 	font-family: $default-font
 	font-weight: normal
 	background: #fff
-	color: #010101
+	color: #000
 
 img
 	display: block
@@ -126,20 +126,36 @@ button, .btn
 	align-items: center
 	justify-content: center
 	text-align: center
-	padding: 20px 50px
+	padding: 19px 50px
 	font-size: 16px
 	line-height: 140%
+	min-width: 320px
 	font-weight: normal
-	border-radius: 10px
+	border-radius: 30px
 	transition: 0.3s ease
 	text-transform: uppercase
+	position: relative
+	z-index: 1
+	overflow: hidden
+	&::before
+		content: ''
+		position: absolute
+		z-index: -1
+		height: 0
+		width: 100%
+		left: 0
+		top: 0
+		transition: .3s
 
 .btn-accent
-	background: radial-gradient(585.46% 50% at 50% 50%, #FFF3C4 0%, #FFD271 100%)
+	background: radial-gradient(ellipse at center, rgba(255,243,196,1) 0%,rgba(255,210,113,1) 100%)
 	color: #000
 	&:hover
-		background: #FFD271
+		
 		color: #000
+		&::before
+			background: #FFD271
+			height: 100%
 
 .svg-icon
 	display: inline-block
@@ -160,8 +176,48 @@ ul, ol
 .list-dots
 	list-style-type: disc
 
+h1
+	text-align: center
+	width: 100%
+	font-size: 24px
+	font-weight: bold
+	margin: 40px auto
+
+h2
+	width: 100%
+	text-align: center
+	font-family: $title-font
+	font-size: 32px
+	margin: 0 auto 32px
+	line-height: 120%
+
+.h3
+	width: 100%
+	text-align: center
+	font-family: $title-font
+	font-size: 24px		
+	line-height: 120%
+
+h3
+	font-size: 24px
+	line-height: 120%	
+	
+.d-inline
+	display: inline-block	
+
+.text-decoration
+	text-decoration: underline
+
+.font-500
+	font-weight: 500	
+
 a.color-inherit
 	color: inherit
+	&:hover
+		color: $accent
+
+a.color-white
+	color: #fff
 	&:hover
 		color: $accent
 
@@ -178,37 +234,19 @@ a.color-inherit
 	justify-content: center
 	li
 		&:not(:last-child)
-			margin: 0 32px 0 0
+			margin: 0 20px 0 0
 		a
 			@include d-flex	
-			width: 88px
-			height: 88px
-			min-width: 88px
+			width: 55px
+			height: 55px
+			min-width: 55px
+			&:hover
+				opacity: 0.8
 
-//checkbox my
-.label-checkbox
-	position: relative
+.container
+	margin: 0 auto 
+	width: 100%
+	padding: 0 15px
+	max-width: 1200px
 	display: flex
-	align-items: flex-start
-	color: rgba(255, 255, 255, 0.5)
-	font-size: 14px
-	margin: 15px 0 0
-	line-height: 1.14
-
-.inp-check
-	display: none
-
-.checkbox-custom
-	margin: 0 12px 0 0
-	position: relative
-	border-radius: 6px
-	background-color: #fff
-	width: 16px
-	height: 16px
-	min-width: 16px
-	cursor: pointer
-
-.inp-check:checked ~ .checkbox-custom
-	background: #fff url("../img/check-black.svg") no-repeat center
-	background-size: 8px
-//checkbox my end
+	flex-wrap: wrap

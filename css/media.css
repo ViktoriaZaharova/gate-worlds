@@ -1,2 +1,140 @@
-/*==========  Desktop First  ==========*/
+/*==========	Desktop First	==========*/
 /* Large Devices, Wide Screens */
+@media only screen and (max-width: 576px) {
+  .logo {
+    max-width: 139px;
+    margin: 0 auto 8px;
+  }
+  header .link {
+    width: 50%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 77px;
+    line-height: 120%;
+    margin: 56px auto;
+  }
+  h2 {
+    font-size: 64px;
+    margin: 0 auto 56px;
+  }
+  .subtitle {
+    font-size: 24px;
+  }
+  .text-info {
+    margin: 0 auto 32px;
+    font-size: 24px;
+  }
+  .attention-info {
+    margin: 16px auto 120px;
+  }
+  footer {
+    padding: 60px 0 20px;
+  }
+  .link-developer {
+    margin: 60px auto 0;
+  }
+  .h3 {
+    font-size: 40px;
+  }
+  .list-social li:not(:last-child) {
+    margin: 0 32px 0 0;
+  }
+  .list-social li a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 88px;
+    height: 88px;
+    min-width: 88px;
+  }
+  .subscribe {
+    padding: 16px 0 80px;
+  }
+  .subscribe .subtitle {
+    margin: 0 auto 48px;
+    font-size: 32px;
+    max-width: 860px;
+  }
+  .subscribe::before, .subscribe::after {
+    top: 28px;
+    height: 411px;
+    width: 732.761px;
+  }
+  .subscribe::before {
+    left: -280px;
+  }
+  .subscribe::after {
+    right: -280px;
+  }
+  .callback {
+    margin: 80px 0;
+  }
+  .callback .h3 {
+    margin: 80px auto 0;
+  }
+  .callback-content {
+    font-size: 24px;
+    text-align: left;
+    margin: 0;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  h3 {
+    font-size: 40px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  h1 {
+    font-size: 92px;
+    margin: 44px auto;
+  }
+  h2 {
+    font-size: 80px;
+    margin: 0 auto 64px;
+  }
+  h3 {
+    font-size: 56px;
+  }
+  .home-description {
+    font-size: 24px;
+    margin: 0 auto 64px;
+  }
+  .h3 {
+    font-size: 56px;
+  }
+  .subscribe {
+    padding: 150px 0 120px;
+  }
+  .subscribe::before, .subscribe::after {
+    height: 654px;
+    width: 1166px;
+    top: 22px;
+  }
+  .subscribe::before {
+    left: -310px;
+  }
+  .subscribe::after {
+    right: -310px;
+  }
+  .callback {
+    margin: 120px 0 0;
+  }
+  .callback .h3 {
+    margin: 120px auto 0;
+  }
+  .callback-content {
+    font-size: 40px;
+  }
+}
