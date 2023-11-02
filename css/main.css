@@ -61,6 +61,7 @@
 .attention-info {
   text-align: center;
   width: 100%;
+  font-weight: 300;
   margin: 8px auto 64px;
   text-transform: lowercase;
 }
@@ -125,7 +126,7 @@
   text-transform: uppercase;
   font-family: "New-YorkerC", sans-serif;
   text-align: center;
-  margin: 24px auto 0;
+  margin: 8px auto 0;
 }
 
 .course-who {
@@ -143,6 +144,8 @@
   margin: 0 auto;
   max-width: 1170px;
   padding: 64px 16px;
+  border-radius: 0 300px;
+  overflow: hidden;
 }
 
 .course-who-steps {
@@ -235,6 +238,8 @@
 }
 .subscribe::after {
   right: -174px;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
 }
 .subscribe::before {
   left: -174px;
@@ -419,7 +424,7 @@
   content: "";
   position: absolute;
   top: 6px;
-  left: 8px;
+  left: 4px;
   background: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 211, 36)), to(rgb(154, 105, 1)));
   background: linear-gradient(to bottom, rgb(255, 211, 36) 0%, rgb(154, 105, 1) 100%);
   width: 1px;
@@ -463,7 +468,7 @@
   height: calc(100% - 6px);
   width: 1px;
   top: 5px;
-  left: 8px;
+  left: 4px;
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(233, 233, 233, 0.9)), to(rgba(233, 233, 233, 0.9)));
   background: linear-gradient(0deg, rgba(233, 233, 233, 0.9) 0%, rgba(233, 233, 233, 0.9) 100%);
 }
@@ -654,6 +659,7 @@
   font-family: "New-YorkerC", sans-serif;
   width: 100%;
   margin: 0 auto 16px;
+  line-height: normal;
 }
 .prices-box__description {
   margin: 0 auto 32px;
@@ -663,6 +669,7 @@
 }
 .prices-box__price {
   font-size: 32px;
+  line-height: normal;
   margin: 0 auto 8px;
   font-family: "New-YorkerC", sans-serif;
 }

@@ -51,6 +51,7 @@
 .attention-info
 	text-align: center
 	width: 100%
+	font-weight: 300
 	margin: 8px auto 64px
 	text-transform: lowercase
 
@@ -104,7 +105,7 @@
 		text-transform: uppercase
 		font-family: $title-font
 		text-align: center
-		margin: 24px auto 0
+		margin: 8px auto 0
 
 // course-who
 .course-who
@@ -120,6 +121,8 @@
 	margin: 0 auto
 	max-width: 1170px
 	padding: 64px 16px
+	border-radius: 0 300px
+	overflow: hidden
 
 .course-who-steps
 	width: 100%
@@ -184,6 +187,7 @@
 		z-index: -1
 	&::after
 		right: -174px
+		transform: rotate(-180deg)
 	&::before
 		left: -174px
 	.subtitle
@@ -336,7 +340,7 @@
 		content: ''
 		position: absolute
 		top: 6px
-		left: 8px
+		left: 4px
 		background: linear-gradient(to bottom, rgba(255,211,36,1) 0%,rgba(154,105,1,1) 100%)
 		width: 1px
 		height: calc(100% - 10px)
@@ -375,7 +379,7 @@
 				height: calc(100% - 6px)
 				width: 1px
 				top: 5px
-				left: 8px
+				left: 4px
 				background: linear-gradient(0deg, rgba(233, 233, 233, 0.90) 0%, rgba(233, 233, 233, 0.90) 100%)
 			&::before
 				background: rgb(154,105,1)
@@ -507,6 +511,7 @@
 		font-family: $title-font
 		width: 100%
 		margin: 0 auto 16px
+		line-height: normal
 	&__description
 		margin: 0 auto 32px
 		font-weight: 300
@@ -514,6 +519,7 @@
 		line-height: 120%
 	&__price
 		font-size: 32px
+		line-height: normal
 		margin: 0 auto 8px
 		font-family: $title-font
 	&__info

@@ -1,20 +1,100 @@
 /*==========	Desktop First	==========*/
 /* Large Devices, Wide Screens */
+@media only screen and (max-width: 1060px) {
+  .author-photo {
+    max-width: 460px;
+    height: 540px;
+  }
+  .author-content {
+    width: calc(100% - 460px);
+    padding: 0 20px 0 0;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .author-photo {
+    margin: 24px auto;
+  }
+  .author-photo.d-pc {
+    display: none;
+  }
+  .author-photo.d-mobile {
+    display: block;
+  }
+  .author-content {
+    width: 100%;
+    padding: 0;
+  }
+  .author-position {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  .author .btn {
+    margin: 0 auto;
+  }
+  .author .box-text {
+    max-width: 460px;
+    margin: 24px auto 40px;
+  }
+}
 @media only screen and (max-width: 768px) {
   .course-who-step {
     width: 50%;
   }
+  .logo {
+    max-width: 190px;
+  }
+  header {
+    font-size: 18px;
+  }
+  .stages-registation-box__body {
+    max-width: 370px;
+  }
+  .stages-registation-box:first-child .box-text {
+    max-width: 270px;
+  }
+  .prices-box {
+    max-width: 320px;
+    margin: 0 auto 32px;
+  }
+  .prices .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .callback .btn {
+    margin: 0 auto;
+  }
 }
 @media only screen and (max-width: 576px) {
   .logo {
-    max-width: 139px;
+    max-width: none;
+    width: 100%;
     margin: 0 auto 8px;
+  }
+  .logo img {
+    max-width: 139px;
+  }
+  header {
+    font-size: 14px;
   }
   header .link {
     width: 50%;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
+    font-weight: 300;
+  }
+  header .link:last-child {
+    text-align: right;
   }
   .btn {
     text-transform: none;
@@ -28,10 +108,117 @@
     display: none;
   }
   .prices h2 {
+    max-width: 280px;
     margin: 0 auto 24px;
     font-family: "Gotham Pro", sans-serif;
     font-size: 20px;
     font-weight: bold;
+  }
+  .home {
+    padding: 136px 0 64px;
+  }
+  h1 {
+    max-width: 290px;
+  }
+  .home-content {
+    max-width: 290px;
+  }
+  .text-info {
+    max-width: 272px;
+  }
+  .text-info br {
+    display: none;
+  }
+  .btn {
+    min-width: auto;
+    padding: 14px 50px;
+  }
+  .attention-info {
+    font-size: 14px;
+  }
+  .course-who-step {
+    width: 100%;
+  }
+  .course-who-step__body {
+    max-width: none;
+  }
+  .course-who-step__number {
+    min-width: 122px;
+  }
+  .course-who-wrapper {
+    background: url("../img/bg3-mobile.png") no-repeat center;
+    background-size: cover;
+    border-radius: 0px 80px;
+  }
+  .about::before {
+    height: calc(100% + 154px);
+  }
+  .about::after {
+    background: url("../img/about-bg-mobile.png") no-repeat center;
+    background-size: cover;
+    height: 1321px;
+  }
+  .author .box-text {
+    max-width: 288px;
+  }
+  .author-photo {
+    max-width: 288px;
+    height: 338px;
+  }
+  .program {
+    background: url("../img/bg4-mobile.png") no-repeat center top;
+    background-size: cover;
+  }
+  .program .container {
+    padding: 0;
+  }
+  .program-box1 {
+    background: url("../img/program-bg1-mobile.png") no-repeat center;
+    background-size: cover;
+  }
+  .program-box2 {
+    background: url("../img/program-bg2-mobile.png") no-repeat center;
+    background-size: cover;
+  }
+  .program-box3 {
+    background: url("../img/program-bg3-mobile.png") no-repeat center;
+    background-size: cover;
+  }
+  .program-box4 {
+    background: url("../img/program-bg4-mobile.png") no-repeat center;
+    background-size: cover;
+  }
+  .list-stage li:last-child::after {
+    background: #ebebeb;
+  }
+  .program-box:nth-child(even) .list-stage li:last-child::after {
+    background: #1c1c1c;
+  }
+  .link-toggle {
+    color: #fff;
+  }
+  .link-toggle::after {
+    -webkit-filter: brightness(0) invert(1);
+            filter: brightness(0) invert(1);
+  }
+  .stages-registation h2 {
+    max-width: 275px;
+    font-weight: bold;
+  }
+  .prices-box .btn {
+    padding: 14px 20px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .btn {
+    width: 100%;
+  }
+  .home::before {
+    background: url("../img/bg1-mobile.png") no-repeat center top;
+    background-size: 100%;
+  }
+  .program .btn {
+    width: calc(100% - 30px);
   }
 }
 @media only screen and (min-width: 768px) {
@@ -140,11 +327,7 @@
     margin: 120px 0;
   }
   .author h2 {
-    text-align: left;
     font-size: 56px;
-  }
-  .author .box-text {
-    margin: 24px 0 40px;
   }
   .author-position {
     font-size: 24px;
@@ -178,6 +361,9 @@
   .program-box__footer h4 {
     font-size: 24px;
   }
+  .list-stage::before {
+    left: 8px;
+  }
   .list-stage li {
     padding: 0 0 30px 37px;
   }
@@ -185,6 +371,9 @@
     width: 16px;
     height: 16px;
     min-width: 16px;
+  }
+  .list-stage li:last-child::after {
+    left: 8px;
   }
   .list-stage__name, .list-stage__number {
     font-size: 24px;
@@ -224,8 +413,9 @@
     max-width: 280px;
   }
   .prices h2 {
-    margin: 0 auto 56px;
-    font-size: 56px;
+    margin: 0 auto 64px;
+    max-width: 940px;
+    font-size: 40px;
   }
   .prices-box {
     width: calc(33.33% - 15px);
@@ -233,7 +423,7 @@
   }
   .prices-box__description {
     font-size: 24px;
-    margin: 24px auto 0;
+    margin: 24px auto 40px;
     max-width: 330px;
   }
   .prices-box__price {
@@ -274,10 +464,10 @@
     top: 22px;
   }
   .subscribe::before {
-    left: -310px;
+    left: -250px;
   }
   .subscribe::after {
-    right: -310px;
+    right: -250px;
   }
   .callback {
     margin: 120px 0 0;
@@ -299,6 +489,7 @@
   }
   .author h2 {
     font-size: 64px;
+    text-align: left;
   }
   .author .box-text {
     margin: 66px 0 84px;
@@ -317,12 +508,20 @@
   }
   .prices h2 {
     margin: 0 auto 64px;
-    font-size: 40px;
+    font-size: 56px;
   }
   .prices-box__info {
     margin: 8px auto 56px;
   }
   .course-who-step__number {
     font-size: 111px;
+  }
+}
+@media only screen and (min-width: 1100px) {
+  .subscribe::before {
+    left: -280px;
+  }
+  .subscribe::after {
+    right: -280px;
   }
 }
