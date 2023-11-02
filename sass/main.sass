@@ -58,7 +58,96 @@
 	margin: 0 auto 16px
 	font-size: 16px
 
-.callback 
+// about
+.about
+	padding: 64px 0
+	position: relative
+	z-index: 0
+	&::before
+		content: ''
+		position: absolute
+		left: 50%
+		top: 0
+		transform: translate(-50%,0)
+		background: linear-gradient(180deg, #FFF 0%, #E7F4FE 100%)
+		mix-blend-mode: multiply
+		z-index: -1
+		width: 100%
+		height: calc(100% + 244px)
+	&::after
+		content: ''	
+		position: absolute
+		left: 50%
+		top: 0
+		transform: translate(-50%,0)
+		background: url('../img/about-bg.png') no-repeat center
+		background-size: 100%
+		width: 100%
+		height: calc(100% + 244px)
+		z-index: -1
+		mix-blend-mode: multiply
+	.box-text
+		max-width: 940px
+		margin: 0 auto 16px
+		text-align: center
+		&:last-child
+			margin: 0
+		p
+			margin: 0 0 24px
+			&:last-child
+				margin: 0
+		strong
+			font-weight: 500
+
+	h3
+		width: 100%
+		text-transform: uppercase
+		font-family: $title-font
+		text-align: center
+		margin: 24px auto 0
+
+// course-who
+.course-who
+	position: relative
+	z-index: 1
+	.btn
+		margin: 16px auto 0
+
+.course-who-wrapper
+	background: url('../img/bg3.png') no-repeat center
+	background-size: cover
+	color: #fff
+	margin: 0 auto
+	max-width: 1170px
+	padding: 64px 16px
+
+.course-who-steps
+	width: 100%
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+
+.course-who-step
+	width: 33.33%
+	display: flex
+	align-items: center
+	margin: 0 0 16px
+	&__number
+		background: linear-gradient(180deg, #FFF 0%, #535353 100%)
+		background-clip: text
+		-webkit-background-clip: text
+		-webkit-text-fill-color: transparent
+		font-size: 100px
+		font-weight: bold
+		font-family: $font
+		margin: 0 12px 0 0
+	&__body
+		max-width: 193px
+		width: 100%
+		line-height: 140%
+
+// .callback
+.callback
 	margin: 32px 0 38px
 	.h3
 		margin: 64px auto 0
@@ -72,11 +161,12 @@
 	h3
 		font-weight: bold
 
-.callback-content	
+.callback-content
 	font-size: 16px
 	margin: 0 auto 24px
 	text-align: center
 	width: 100%
+	font-weight: 300
 
 .subscribe
 	padding: 26px 0 40px
@@ -114,3 +204,336 @@
 	left: 0
 	top: 0
 	background: rgba(255, 255, 255, 0.80)
+
+// .author	
+.author
+	position: relative
+	z-index: 1
+	h2
+		font-family: $default-font
+		font-weight: 400
+		text-transform: uppercase
+		margin: 0 auto 16px
+		line-height: 120%
+		font-size: 32px
+	.box-text
+		line-height: 150%
+		margin: 24px 0 32px
+
+.author-content
+	width: calc(100% - 570px)
+	padding: 0 30px 0 0
+
+.author-position
+	font-size: 16px
+	text-transform: uppercase
+	position: relative
+	font-weight: 300
+	&::before
+		content: ''
+		width: 10px
+		min-width: 10px
+		height: 10px
+		display: inline-flex
+		border-radius: 50%
+		background: #4B4B4B
+		margin: 0 12px 0 0
+
+.author-photo
+	max-width: 570px
+	width: 100%
+	height: 670px
+	display: flex
+	align-items: center
+	justify-content: center
+	overflow: hidden
+	img
+		width: 100%
+
+	&.d-mobile
+		display: none
+
+// program
+.program
+	position: relative
+	z-index: 0
+	padding: 0 0 73px
+	.btn
+		margin: 0 auto
+	&::before
+		content: ''
+		position: absolute
+		z-index: -1
+		left: 0
+		bottom: 0
+		background: url('../img/bg4.png') no-repeat center top
+		background-size: cover
+		width: 100%
+		height: calc(100% + 1700px)	
+
+.program-box
+	border-radius: 30px
+	padding: 24px 16px
+	margin: 0 0 32px
+	display: none
+	&:nth-child(-n+1)
+		display: block
+	&:last-child
+		margin: 0
+	h3
+		font-family: $title-font
+		width: 100%
+		background: radial-gradient(585.46% 50% at 50% 50%, #EDC012 0%, #996800 100%)
+		background-clip: text
+		-webkit-background-clip: text
+		-webkit-text-fill-color: transparent
+		font-size: 24px
+		margin: 0 0 16px
+	&__head
+		width: 100%
+		margin: 0 0 24px
+	.box-text
+		line-height: 140%
+	&__body, &__footer
+		.box-text
+			font-weight: 300
+	&:nth-child(even)
+		.list-stage
+			&::before
+				background: linear-gradient(to bottom, rgba(255,243,196,1) 0%,rgba(255,210,113,1) 100%)
+			li
+				&::before
+					background: rgb(255,243,196)
+				&:nth-child(2)
+					&::before
+						background: rgb(255,233,170)
+				&:nth-child(3)
+					&::before
+						background: rgb(255,222,142)
+				&:nth-child(4)
+					&::before
+						background: rgb(255,211,116)
+				&:nth-child(5)
+					&::before
+						background: rgb(255,210,113)
+				&:last-child
+					&::before
+						background: rgb(255,210,113)
+					&::after
+						background: linear-gradient(0deg, rgba(31, 31, 31, 0.90) 0%, rgba(31, 31, 31, 0.90) 100%)
+
+	&__footer
+		margin: 32px 0 0
+		h4
+			font-weight: 500
+			margin: 0 0 16px
+			font-size: 16px
+
+.list-stage
+	position: relative
+	width: 100%
+	&::before
+		content: ''
+		position: absolute
+		top: 6px
+		left: 8px
+		background: linear-gradient(to bottom, rgba(255,211,36,1) 0%,rgba(154,105,1,1) 100%)
+		width: 1px
+		height: calc(100% - 10px)
+	li
+		width: 100%
+		position: relative
+		padding: 0 0 24px 17px
+		&::before
+			content: ''
+			position: absolute
+			width: 9px
+			height: 9px
+			min-width: 9px
+			left: 0
+			top: 5px
+			border-radius: 50%
+			background: rgb(255,211,36)
+			z-index: 1
+		&:nth-child(2)
+			&::before
+				background: rgb(231,185,28)
+		&:nth-child(3)
+			&::before
+				background: rgb(210,163,20)
+		&:nth-child(4)
+			&::before
+				background: rgb(187,140,12)
+		&:nth-child(5)
+			&::before
+				background: rgb(171,123,7)
+		&:last-child
+			padding-bottom: 0
+			&::after
+				content: ''
+				position: absolute
+				height: calc(100% - 6px)
+				width: 1px
+				top: 5px
+				left: 8px
+				background: linear-gradient(0deg, rgba(233, 233, 233, 0.90) 0%, rgba(233, 233, 233, 0.90) 100%)
+			&::before
+				background: rgb(154,105,1)
+	&__number
+		font-weight: bold
+		margin: 0 0 8px
+	&__name
+		font-weight: 500
+	&__content
+		margin: 16px 0 0
+		font-weight: 300
+		p
+			margin: 0 0 20px
+			&:last-child
+				margin: 0
+
+.program-box1
+	background: linear-gradient(0deg, rgba(233, 233, 233, 0.90) 0%, rgba(233, 233, 233, 0.90) 100%), url('../img/program-bg1.png'), no-repeat
+	background-size: cover
+	background-position: center
+
+.program-box2
+	color: #fff
+	background: linear-gradient(0deg, rgba(31, 31, 31, 0.90) 0%, rgba(31, 31, 31, 0.90) 100%), url('../img/program-bg2.png'), no-repeat
+	background-size: cover
+	background-position: center
+
+.program-box3
+	background: url('../img/program-bg3.png'), no-repeat
+	background-size: cover
+	background-position: center
+
+.program-box4
+	color: #fff
+	background: linear-gradient(0deg, rgba(31, 31, 31, 0.90) 0%, rgba(31, 31, 31, 0.90) 100%), url('../img/program-bg4.png'), no-repeat
+	background-size: cover
+	background-position: center
+	
+
+.link-toggle
+	display: flex
+	align-items: center
+	justify-content: center
+	margin: 0 auto 24px
+	text-decoration: underline
+	color: #000
+	font-size: 16px
+	width: 100%
+	text-align: center
+	&::after
+		content: ''
+		display: inline-flex
+		width: 20px
+		height: 20px
+		min-width: 20px
+		margin: 0 0 0 16px
+		background: url('../img/arrow-bottom.svg') no-repeat center
+		background-size: 100%
+	&:hover
+		color: $accent
+	&.trigger
+		color: #fff
+		&:after
+			transform: rotate(180deg)
+			filter: brightness(0) invert(1)
+
+
+// stages-registation
+.stages-registation
+	padding: 64px 0	
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), url('../img/stages-bg.png'), no-repeat
+	background-position: center
+	background-size: cover
+	color: #fff
+	h2
+		font-family: $default-font
+		font-size: 20px
+		margin: 0 auto 32px	
+	.wrapper
+		justify-content: center	
+	.btn
+		margin: 0 auto 0	
+
+.stages-registation-box
+	text-align: center
+	margin: 0 0 32px
+	&:last-child
+		margin: 0 0 32px
+	&__icon
+		margin: 0 auto 8px		
+		max-width: 40px
+		width: 100%
+		height: 40px
+		@include d-flex
+	h3
+		margin: 0 auto 8px
+		font-size: 18px
+		font-family: $default-font
+	&__body
+		width: 100%
+	.box-text
+		font-size: 14px
+		font-weight: 300
+
+// prices
+.prices
+	h2
+		margin: 0 auto 24px
+	.wrapper
+		justify-content: space-between
+		align-items: stretch
+
+.prices-box
+	width: 100%
+	border-radius: 70px 0px
+	padding: 32px 30px
+	display: flex
+	flex-direction: column
+	text-align: center
+	line-height: 120%
+	min-height: 343px
+	.btn
+		width: 100%
+		margin: auto auto 0
+		padding: 18px 10px
+		min-width: auto
+	&__title
+		font-size: 32px
+		font-family: $title-font
+		width: 100%
+		margin: 0 auto 16px
+	&__description
+		margin: 0 auto 32px
+		font-weight: 300
+		max-width: 260px
+		line-height: 120%
+	&__price
+		font-size: 32px
+		margin: 0 auto 8px
+		font-family: $title-font
+	&__info
+		font-weight: 300
+		strong
+			font-weight: 500
+
+
+.prices-box1
+	background: linear-gradient(0deg, rgba(243, 243, 243, 0.70) 0%, rgba(243, 243, 243, 0.70) 100%), url('../img/price-bg1.png'), no-repeat
+	background-size: cover
+	background-position: center	
+
+.prices-box2
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%), url('../img/price-bg2.png'), no-repeat
+	background-size: cover
+	background-position: center		
+	color: #fff
+
+.prices-box3
+	background: linear-gradient(0deg, rgba(243, 243, 243, 0.70) 0%, rgba(243, 243, 243, 0.70) 100%), url('../img/price-bg3.png'), no-repeat
+	background-size: cover
+	background-position: center	

@@ -371,3 +371,27 @@ a.color-white:hover {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
+
+.wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.d-mobile {
+  display: none;
+}
+
+.d-pc {
+  display: block;
+}
+
+.m-120 {
+  margin: 64px 0;
+}

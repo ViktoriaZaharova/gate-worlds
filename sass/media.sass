@@ -6,6 +6,8 @@
 @media only screen and (max-width: 992px)
 
 @media only screen and (max-width: 768px)
+	.course-who-step
+		width: 50%
 
 @media only screen and (max-width: 576px)
 	.logo
@@ -17,6 +19,22 @@
 			width: 50%
 			order: 1
 
+	.btn
+		text-transform: none
+
+	.d-mobile
+		display: flex
+
+	.d-pc
+		display: none
+
+	.prices
+		h2
+			margin: 0 auto 24px
+			font-family: 'Gotham Pro', sans-serif
+			font-size: 20px
+			font-weight: bold	
+			
 @media only screen and (max-width: 480px)
 
 @media only screen and (max-width: 420px)
@@ -79,19 +97,133 @@
 		&::after
 			right: -280px
 
+	h3
+		font-size: 40px
+
 	.callback
 		margin: 80px 0
 		.h3
-			margin: 80px auto 0		
+			margin: 80px auto 0
 
-	.callback-content	
+	.callback-content
 		font-size: 24px
-		text-align: left	
+		text-align: left
 		margin: 0
 		width: fit-content
 
-	h3
-		font-size: 40px	
+	.about
+		padding: 80px 0 80px
+		.box-text
+			margin: 0 auto 14px
+			max-width: 940px
+		h3
+			margin: 64px auto 0
+			font-size: 40px
+
+	.course-who
+		.btn
+			margin: 32px auto 0
+
+	.course-who-wrapper
+		padding: 90px 45px
+
+	.course-who-step
+		margin: 0 0 32px
+		
+
+	.m-120
+		margin: 120px 0
+
+	.author
+		h2
+			text-align: left
+			font-size: 56px
+		.box-text
+			margin: 24px 0 40px
+
+	.author-position
+		font-size: 24px
+
+	.link-toggle
+		font-size: 24px
+		margin: 0 auto 56px
+		&:after
+			width: 32px
+			height: 32px
+			min-width: 32px
+
+	.program-box
+		border-radius: 100px
+		padding: 40px 46px
+		margin: 0 0 80px
+		&:last-child
+			margin: 0
+		h3
+			font-size: 40px
+		&__head
+			margin: 0 0 40px
+		&__footer
+			margin: 40px 0 0
+			h4
+				font-size: 24px
+
+	.list-stage
+		li
+			padding: 0 0 30px 37px
+			&::before
+				width: 16px
+				height: 16px
+				min-width: 16px
+		&__name, &__number
+			font-size: 24px
+
+	.stages-registation
+		padding: 120px 0 80px
+		h2
+			font-size: 56px
+			margin: 0 auto 64px
+
+	.stages-registation-box
+		margin: 0 30px 64px 0
+		line-height: 120%
+		&:last-child
+			margin: 0 0 64px
+		&__body
+			max-width: 370px
+		&__icon
+			max-width: 80px
+			height: 80px
+			margin: 0 auto 28px
+		h3
+			margin: 0 auto 15px
+			font-size: 32px
+			font-weight: bold
+		.box-text
+			font-size: 16px
+		&:first-child
+			.box-text
+				margin: 0 auto
+				max-width: 280px
+
+	.prices
+		h2
+			margin: 0 auto 56px
+			font-size: 56px			
+
+	.prices-box
+		width: calc(33.33% - 15px)
+		padding: 48px 20px
+		&__description
+			font-size: 24px
+			margin: 24px auto 0
+			max-width: 330px 
+		&__price
+			margin: 90px auto 0
+		&__info
+			margin: 16px auto 40px	
+		h3
+			min-height: 96px
+
 
 @media only screen and (min-width: 1024px)
 	h1
@@ -103,7 +235,7 @@
 		margin: 0 auto 64px
 
 	h3
-		font-size: 56px	
+		font-size: 56px
 
 	.home-description
 		font-size: 24px
@@ -129,4 +261,41 @@
 			margin: 120px auto 0
 
 	.callback-content
-		font-size: 40px		
+		font-size: 40px
+
+	.about
+		padding: 120px 0 80px
+		.box-text
+			margin: 0 auto 32px
+
+	.course-who
+		.btn
+			margin: 21px auto 0
+
+	.author
+		h2
+			font-size: 64px
+		.box-text
+			margin: 66px 0 84px
+
+	.program-box
+		padding: 40px 100px
+		&__footer
+			margin: 56px 0 0
+
+	.stages-registation
+		padding: 120px 0 154px
+		h2
+			margin: 0 auto 80px
+
+	.prices
+		h2
+			margin: 0 auto 64px
+			font-size: 40px		
+
+	.prices-box
+		&__info
+			margin: 8px auto 56px		
+
+	.course-who-step__number
+		font-size: 111px			
